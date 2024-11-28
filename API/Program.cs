@@ -1,10 +1,28 @@
+using Application.Mappings;
+using Application.Services;
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Automapper configuration
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// Services configuration
+builder.Services.AddScoped<BookService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<LoanService>();
+
+// Repositories configuration
+builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ILoanRepository, LoanRepository>();
+
 
 // Serilog configuration
 Log.Logger = new LoggerConfiguration()

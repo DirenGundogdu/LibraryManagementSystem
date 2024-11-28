@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NfHg7ncq/kQ=",
+  "dgSpecHash": "TCzny1PL5Bw=",
   "success": true,
   "projectFilePath": "/Users/diren/RiderProjects/LibraryManagementSystem/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/diren/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/diren/.nuget/packages/microsoft.entityframeworkcore/8.0.11/microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
     "/Users/diren/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.11/microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
     "/Users/diren/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.11/microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",
